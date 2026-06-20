@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الورشة Detailing – Tlemcen</title>
+    <meta name="description" content="الورشة Detailing – Spécialiste du detailing automobile à Tlemcen. Lavage premium, polissage, traitement céramique et réparation peinture.">
+<meta name="keywords" content="detailing Tlemcen, lavage voiture Tlemcen, polissage, céramique, الورشة">
+<meta property="og:title" content="الورشة Detailing – Tlemcen">
+<meta property="og:description" content="Votre voiture mérite le meilleur – Spécialiste detailing à Tlemcen">
+<meta property="og:image" content="images/logo.jpg">
+<meta property="og:type" content="website">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+<nav id="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <img src="logoo.jpg" alt="الورشة Detailing">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#accueil">ACCUEIL</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#pourquoi">POURQUOI NOUS</a></li>
+            <li><a href="#galerie">GALERIE</a></li>
+            <li><a href="#tarifs">TARIFS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+    </div>
+</nav>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-content">
+            <div class="logo-wrapper">
+                <img src="logo.jpg" alt="الورشة Detailing" id="logo">
+                <div class="shine"></div>
+            </div>
+            <p class="slogan">Votre voiture mérite le meilleur</p>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+    <!-- LIGHTBOX -->
+<div id="lightbox">
+    <div class="lightbox-overlay" onclick="closeLightbox()"></div>
+    <div class="lightbox-content">
+        <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+        <button class="lightbox-prev" onclick="lightboxPrev()">&#8592;</button>
+        <img id="lightbox-img" src="" alt="">
+        <button class="lightbox-next" onclick="lightboxNext()">&#8594;</button>
+    </div>
+</div>
+</body>
+<!-- NOS SERVICES -->
+<!-- NOS SERVICES -->
+<section id="services">
+    <div class="services-container">
+        <h2 class="section-title">NOS SERVICES</h2>
+        <div class="services-grid">
+
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card-front">
+                        <i class="fa-solid fa-car-side card-icon"></i>
+                        <h3>LAVAGE PREMIUM</h3>
+                      <button class="card-flip-btn">
+    EN SAVOIR PLUS
+</button>
+                    </div>
+                    <div class="card-back" style="background-image: url('lavage.png')">
+                        <div class="card-overlay">
+                            <p>Nettoyage complet intérieur & extérieur avec des produits haut de gamme</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card-front">
+                        <i class="fa-solid fa-spray-can-sparkles card-icon"></i>
+                        <h3>POLISSAGE & LUSTRAGE</h3>
+                       <button class="card-flip-btn">
+    EN SAVOIR PLUS
+</button>
+                    </div>
+                    <div class="card-back" style="background-image: url('polissage.png')">
+                        <div class="card-overlay">
+                            <p>Correction du vernis, suppression des micro-rayures et brillance optimale</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card-front">
+                        <i class="fa-solid fa-shield-halved card-icon"></i>
+                        <h3>TRAITEMENT CÉRAMIQUE</h3>
+                    <button class="card-flip-btn">
+    EN SAVOIR PLUS
+</button>
+                    </div>
+                    <div class="card-back" style="background-image: url('traitement.png')">
+                        <div class="card-overlay">
+                            <p>Protection durable contre les UV, rayures et saletés avec effet brillant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card-front">
+                        <i class="fa-solid fa-paint-roller card-icon"></i>
+                        <h3>RÉPARATION PEINTURE</h3>
+                     <button class="card-flip-btn">
+    EN SAVOIR PLUS
+</button>
+                    </div>
+                    <div class="card-back" style="background-image: url('retouche.png')">
+                        <div class="card-overlay">
+                            <p>Retouche professionnelle pour couvrir impacts et éclats de peinture</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- GALERIE -->
+<section id="galerie">
+    <div class="galerie-container">
+        <h2 class="section-title dark">GALERIE</h2>
+        <div class="carousel-wrapper">
+            <div class="carousel-track" id="carouselTrack">
+                <div class="carousel-slide" onclick="openLightbox(0)"><img src="galerie1.jpg" alt="galerie 1"></div>
+                <div class="carousel-slide" onclick="openLightbox(1)"><img src="galerie2.jpg" alt="galerie 2"></div>
+                <div class="carousel-slide" onclick="openLightbox(2)"><img src="galerie3.jpg" alt="galerie 3"></div>
+                <div class="carousel-slide" onclick="openLightbox(3)"><img src="galerie4.jpg" alt="galerie 4"></div>
+                <div class="carousel-slide" onclick="openLightbox(4)"><img src="galerie5.jpg" alt="galerie 5"></div>
+                <div class="carousel-slide" onclick="openLightbox(5)"><img src="galerie6.jpg" alt="galerie 6"></div>
+                <div class="carousel-slide" onclick="openLightbox(6)"><img src="galerie7.jpg" alt="galerie 7"></div>
+                <div class="carousel-slide" onclick="openLightbox(7)"><img src="galerie8.jpg" alt="galerie 8"></div>
+                <div class="carousel-slide" onclick="openLightbox(8)"><img src="galerie9.jpg" alt="galerie 9"></div>
+                <div class="carousel-slide" onclick="openLightbox(9)"><img src="galerie10.jpg" alt="galerie 10"></div>
+            </div>
+        </div>
+        <div class="carousel-controls">
+            <button onclick="prevSlide()">&#8592;</button>
+            <div class="carousel-dots" id="carouselDots"></div>
+            <button onclick="nextSlide()">&#8594;</button>
+        </div>
+    </div>
+</section>
+<!-- TARIFS -->
+<section id="tarifs">
+    <div class="tarifs-container">
+        <h2 class="section-title">NOS TARIFS</h2>
+        <div class="tarifs-grid">
+
+            <div class="tarif-card slide-left">
+                <div class="tarif-header">
+                    <h3>PACK brillance </h3>
+                </div>
+                <div class="tarif-price">
+                    <span class="price">20 000</span>
+                    <span class="currency">DA</span>
+                </div>
+                <ul class="tarif-features">
+                    <li><i class="fa-solid fa-check"></i> lavage complet exterieur </li>
+                    <li><i class="fa-solid fa-check"></i> Nettoyage intérieur </li>
+                    <li><i class="fa-solid fa-check"></i> Lustrage de base</li>
+                </ul>
+                <a href="#contact" class="tarif-btn">RÉSERVER</a>
+            </div>
+
+            <div class="tarif-card featured slide-up">
+                <div class="tarif-badge">POPULAIRE</div>
+                <div class="tarif-header">
+                    <h3>PACK correction </h3>
+                </div>
+                <div class="tarif-price">
+                    <span class="price">40 000</span>
+                    <span class="currency">DA</span>
+                </div>
+                <ul class="tarif-features">
+                    <li><i class="fa-solid fa-check"></i> Lavage approfondie </li>
+                    <li><i class="fa-solid fa-check"></i> Polissage de vernis </li>
+                    <li><i class="fa-solid fa-check"></i>lustrage complet  </li>
+                </ul>
+                <a href="#contact" class="tarif-btn featured-btn">RÉSERVER</a>
+            </div>
+
+            <div class="tarif-card slide-right">
+                <div class="tarif-header">
+                    <h3>PACK ceramique</h3>
+                </div>
+                <div class="tarif-price">
+                    <span class="from">À partir de</span>
+                    <span class="price">80 000</span>
+                    <span class="currency">DA</span>
+                </div>
+                <ul class="tarif-features">
+                    <li><i class="fa-solid fa-check"></i> Traitement complet premium</li>
+                    <li><i class="fa-solid fa-check"></i> lustrage professionnel</li>
+                    <li><i class="fa-solid fa-check"></i> protection Céramique haute gamme</li>
+                    <li><i class="fa-solid fa-check"></i> correction complete </li>
+                </ul>
+                <a href="#contact" class="tarif-btn">RÉSERVER</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- POURQUOI NOUS -->
+<section id="pourquoi">
+    <div class="pourquoi-overlay">
+        <div class="pourquoi-container">
+            <h2 class="section-title" style="color:#ffffff">POURQUOI NOUS ?</h2>
+            <div class="pourquoi-grid">
+
+                <div class="pourquoi-card">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <h3>EXPERTISE PROFESSIONNELLE</h3>
+                    <p>Une équipe qualifiée avec des années d'expérience dans le detailing</p>
+                </div>
+
+                <div class="pourquoi-card">
+                    <i class="fa-solid fa-star"></i>
+                    <h3>PRODUITS HAUT DE GAMME</h3>
+                    <p>Nous utilisons uniquement des produits professionnels de haute qualité</p>
+                </div>
+
+                <div class="pourquoi-card">
+                    <i class="fa-solid fa-trophy"></i>
+                    <h3>RÉSULTATS GARANTIS</h3>
+                    <p>Votre satisfaction est notre priorité absolue</p>
+                </div>
+
+                <div class="pourquoi-card">
+                    <i class="fa-solid fa-bolt"></i>
+                    <h3>SERVICE RAPIDE</h3>
+                    <p>Intervention efficace dans les meilleurs délais</p>
+                </div>
+
+                <div class="pourquoi-card">
+                    <i class="fa-solid fa-tag"></i>
+                    <h3>PRIX COMPÉTITIFS</h3>
+                    <p>Des prestations premium à des tarifs accessibles</p>
+                </div>
+
+                <div class="pourquoi-card">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3>BASÉ À TLEMCEN</h3>
+                    <p>Votre partenaire de confiance au cœur de Tlemcen</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- CONTACT -->
+<section id="contact">
+    <div class="contact-container">
+        <h2 class="section-title">CONTACTEZ-NOUS</h2>
+        <div class="contact-content">
+
+            <div class="contact-info">
+                <div class="contact-phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:0558363825">055 836 38 25</a>
+                </div>
+                <a 
+                    href="https://wa.me/213558363825" 
+                    target="_blank" 
+                    class="whatsapp-btn">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    NOUS CONTACTER SUR WHATSAPP
+                </a>
+            </div>
+
+            <div class="contact-map">
+                <iframe
+                    src="https://maps.google.com/maps?q=Tlemcen,Algerie&t=m&z=13&output=embed&iwloc=near"
+                    width="100%"
+                    height="350"
+                    style="border:0; border-radius:12px;"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- FOOTER -->
+<footer id="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="logoo.jpg" alt="الورشة Detailing">
+        </div>
+        <div class="footer-links">
+            <a href="#accueil">ACCUEIL</a>
+            <a href="#services">SERVICES</a>
+            <a href="#galerie">GALERIE</a>
+            <a href="#tarifs">TARIFS</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+        <div class="footer-contact">
+            <a href="tel:0558363825">
+                <i class="fa-solid fa-phone"></i> 055 836 38 25
+            </a>
+            <a href="https://wa.me/213558363825" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 الورشة Detailing – Tlemcen. Tous droits réservés.</p>
+            <p class="footer-credit">Site réalisé par <span>Chiraz Senni</span></p>
+        </div>
+    </div>
+</footer>
+</html>
