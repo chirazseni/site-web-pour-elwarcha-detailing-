@@ -939,18 +939,37 @@ body {
     }
 
     /* CONTACT */
+/* CONTACT */
     .contact-content {
         grid-template-columns: 1fr;
         gap: 30px;
+        width: 100%;
+    }
+
+    .contact-info {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-phone {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
     }
 
     .contact-phone a {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .whatsapp-btn {
         font-size: 0.85rem;
         padding: 12px 20px;
+        white-space: normal;
+        width: 90%;
+        max-width: 320px;
+        justify-content: center;
+        text-align: center;
     }
 
     /* FOOTER */
@@ -971,6 +990,7 @@ body {
     #contact {
         padding: 60px 20px;
     }
+
 }
 /* LIGHTBOX */
 #lightbox {
